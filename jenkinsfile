@@ -1,11 +1,11 @@
 pipeline {
     agent any
     environment {
-        PATH = "$PATH:/opt/apache-maven-3.6.3/bin"
+        PATH = "$PATH:/opt/apache-maven-3.8.7/bin"
         
     }
     stages {
-        stage ("Checkout the SCM") {
+        stage ("Checkout SCM") {
             steps {
                 git "https://github.com/mmbabu1988/docker-project123.git"
             }
